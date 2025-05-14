@@ -1,0 +1,6 @@
+# Run the battery monitoring script at reboot
+@reboot /usr/bin/env fish /home/YOUR_USER/PATH_TO_THE_SCRIPT/battery_alert.fish
+
+# Run the battery monitoring script every 5 minutes
+*/5 * * * * /usr/bin/env fish /home/YOUR_USER/PATH_TO_THE_SCRIPT/battery_alert.fish
+
